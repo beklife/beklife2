@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OHMega.IT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">OHMega.IT</td>
+                <td id="navigation">
+                    <a href="#Produkte">Produkte</a> 
+                    <a href="jobs.html">Jobs</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#bio">Über uns</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h3>
+                    <div class="quote">
+                        „Es ist schön, den Erfolg zu feiern, aber es ist wichtiger, die Lehren des Scheiterns zu beherzigen.“
+                            -Bill Gates
+                    </div><br>       
+                    Wir legen Wert auf eine saubere und umweltbewusste Zukunft. Daher nutzen wir 100% unseres Stroms aus erneubarer Energie. Wir verzichten außerdem auf Papierausdrücke und greifen lieber zu digitalen Lösungen durch Endgeräte.
+                </h3>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="danny-feng-e85KBIr2WgM-unsplash.jpg">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p><br>
+            <img onclick="magnify($(this).attr('src'))" src="istockphoto-1320764737-170667a.jpg">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p><br>
+            <img onclick="magnify($(this).attr('src'))" src="austin-distel-fEedoypsW_U-unsplash.jpg">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p><br>
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            Das Leitbild der Firma OHMega IT
+                "Zufriedenheit ist Effizienz, ehrliche Beratung für eine Nachhaltige Zukunft"
+                Unsere Prinzipien sind klar:
+                -Breit aufgestellte Kompetenz und Erfahrung bei der Entwicklung individueller Softwarelösungen
+                -Ein eng zusammenarbeitendes Team, das auch zusammen entspannen kann bei unserem monatlichen Serienmarathon
+                -Nachhaltigkeit als großer Faktor in unserer Beratung und in dem Alltag unserer Mitarbeiter durch ein kostenloses Job-Ticket und einen unbürokratischen Fahrrad verleih.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +49 1573 478 0834</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; ohmega.it@email.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +49 1573 478 5599</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Bonner Str. 484 - 488,<br>
+                                        50968 Köln,<br>
+                                        Germany
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="ihre nachtricht" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        made on earth by hoooman<br> <a href="https://beklife.github.io">OHMega.IT</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
