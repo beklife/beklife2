@@ -119,6 +119,7 @@ header table {
 #about h1 {
     font-size:45px;
     word-wrap:break-word;
+    width: 10vw;
 }
 #about table {
     width:70%;
@@ -214,7 +215,7 @@ header table {
 #bio h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(255, 44, 90);
-    width:8%;
+    width:15%;
 }
 #contact {
     width:92vw;
@@ -435,3 +436,15 @@ details {
   summary::-webkit-details-marker {
     display: none;
   }
+
+  details {
+    /* border-style: groove; */
+    padding: 5px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgb(156, 30, 30); 
+    box-shadow: -1px 1px 13px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: -1px 1px 13px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: -1px 1px 13px 0px rgba(0,0,0,0.53);
+}
+
+  
