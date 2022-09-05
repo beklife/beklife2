@@ -406,3 +406,32 @@ button:focus {
     font-family: 'Tangerine', serif; 
     font-size: 1.5rem; 
 }
+
+.quote2 {
+    font-size: 1rem;
+}
+
+
+details {
+    user-select: none;
+  }
+  
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-right: auto;
+  }
+  
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+  }
+  
+  summary {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
